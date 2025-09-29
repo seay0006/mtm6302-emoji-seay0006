@@ -1,22 +1,33 @@
-@media screen and (max-width: 767px) {
-    #emoji-gallery {
-        grid-template-columns: repeat(2, 1fr); /*2 emojis per row on small screens */
-    }
-    
-}
 
 #emoji-gallery {
     display:grid;
     position: relative;
-    
-    grid-template-columns: repeat(4, 1fr); /*4 emojis per row */
     gap: 40px; /*space between emojis */
     padding: 20px;
     background-color: #f0f0f0; /*light grey background */
     border-radius: 10px; /*rounded corners */
-    border: 8px solid #ccc; /*border around gallery */
+    border: 3px solid #ccc; /*border around gallery */
     max-width: 400px; /*max width of gallery */
     margin: auto; /*center the gallery */
 
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    body {
+        background-color: green;
+    }
     
+    #emoji-gallery {
+        display: grid
+        grid-template-columns: repeat(2, 1fr); /*2 emojis per row on small screens */
+    }
+    
+  
+}
+/* desktop */
+@media screen and (max-width: 1800px) {
+    #emoji-gallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 emojis per row */
+    }
 }
