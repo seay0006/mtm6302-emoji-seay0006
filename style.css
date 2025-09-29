@@ -1,0 +1,12 @@
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* box divs */
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
