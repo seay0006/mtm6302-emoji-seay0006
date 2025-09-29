@@ -16,17 +16,28 @@
     text-align: center;
     padding-bottom: 25px;
 }
+
+
 /* Desktop */
 @media screen and (max-width: 1800px) {
     #emoji-gallery {
         grid-template-columns: repeat(4, 1fr); /* 4 emojis per row */
     }
+
+    .emoji-1 {
+
+    }
+
+
+
 }
+
+
 
 /* Mobile */
 @media screen and (max-width: 767px) {
     body {
-        background-color: green;
+      
     }
     .emoji {
         font-size: 6rem; /*bigger emojis on mobile */
@@ -37,5 +48,7 @@
         grid-template-columns: repeat(2, 1fr); /*2 emojis per row on small screens */
     }
     
-  
+    .emoji-1 {
+        position: relative;
+    }
 }
