@@ -11,7 +11,7 @@
     margin: auto; /*center the gallery */
 
 }
-/* desktop */
+/* Desktop */
 @media screen and (max-width: 1800px) {
     #emoji-gallery {
         grid-template-columns: repeat(4, 1fr); /* 4 emojis per row */
