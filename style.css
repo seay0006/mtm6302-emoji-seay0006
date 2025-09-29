@@ -11,6 +11,12 @@
     margin: auto; /*center the gallery */
 
 }
+/* desktop */
+@media screen and (max-width: 1800px) {
+    #emoji-gallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 emojis per row */
+    }
+}
 
 /* Mobile */
 @media screen and (max-width: 767px) {
@@ -19,15 +25,9 @@
     }
     
     #emoji-gallery {
-        display: grid
+        display: grid;
         grid-template-columns: repeat(2, 1fr); /*2 emojis per row on small screens */
     }
     
   
-}
-/* desktop */
-@media screen and (max-width: 1800px) {
-    #emoji-gallery {
-        grid-template-columns: repeat(4, 1fr); /* 4 emojis per row */
-    }
 }
