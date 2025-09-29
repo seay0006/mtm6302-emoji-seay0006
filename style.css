@@ -1,12 +1,22 @@
-p {
-    text-align: center;
-    font-size: 20px;
+@media screen and (max-width: 767px) {
+    #emoji-gallery {
+        grid-template-columns: repeat(2, 1fr); /*2 emojis per row on small screens */
+    }
+    
 }
 
-/* box divs */
-div {
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
+#emoji-gallery {
+    display:grid;
+    position: relative;
+    
+    grid-template-columns: repeat(4, 1fr); /*4 emojis per row */
+    gap: 40px; /*space between emojis */
+    padding: 20px;
+    background-color: #f0f0f0; /*light grey background */
+    border-radius: 10px; /*rounded corners */
+    border: 8px solid #ccc; /*border around gallery */
+    max-width: 400px; /*max width of gallery */
+    margin: auto; /*center the gallery */
+
+    
 }
