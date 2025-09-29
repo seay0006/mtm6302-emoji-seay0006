@@ -11,6 +11,11 @@
     margin: auto; /*center the gallery */
 
 }
+.emoji {
+    font-size: 3rem; /* Adjust the size as needed */
+    text-align: center;
+    padding-bottom: 25px;
+}
 /* Desktop */
 @media screen and (max-width: 1800px) {
     #emoji-gallery {
@@ -22,6 +27,9 @@
 @media screen and (max-width: 767px) {
     body {
         background-color: green;
+    }
+    .emoji {
+        font-size: 6rem; /*bigger emojis on mobile */
     }
     
     #emoji-gallery {
